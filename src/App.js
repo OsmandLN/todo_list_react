@@ -1,6 +1,5 @@
 import { useState } from 'react'
 
-
 // App 父元件
 const App = () => {
   const [list, setList] = useState([])
@@ -52,9 +51,7 @@ const TodoList = ({ list }) => (
     {
       list.map((todoItem) => {
         return (
-          <>
-            <li>{todoItem} <button>X</button></li >
-          </>
+          <li>{todoItem} <button>X</button></li >
         )
       })
     }
